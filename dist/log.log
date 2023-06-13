@@ -1,0 +1,412 @@
+2021-09-01:15:53:04 DEBUG [main] {SplashScreen.java:26} -- Access to SplashScreen.java
+2021-09-01:15:53:09 DEBUG [main] {LoginForm.java:266} -- Dispose of SplashScreen.java
+2021-09-01:15:53:09 DEBUG [AWT-EventQueue-0] {LoginForm.java:36} -- Access to LoginForm.java
+2021-09-01:15:53:09 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:09 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:09 DEBUG [AWT-EventQueue-0] {LoginForm.java:272} -- Run of PAMUNUWILA HARDWARE (Pvt) Ltd software application
+2021-09-01:15:53:21 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:28} -- SQL query String: SELECT * FROM user INNER JOIN jobrole ON user.jobrole_no = jobrole.jobrole_no WHERE user_username = ? AND user_status = ?
+2021-09-01:15:53:21 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:35} -- Query execution done
+2021-09-01:15:53:21 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:52} -- Check validation of username & password
+2021-09-01:15:53:21 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:58} -- Set login status
+2021-09-01:15:53:21 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:61} -- return rowData
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomePage.java:36} -- Access to HomePage.java
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomePage.java:45} -- Give user access
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomeModel.java:28} -- SQL query String: SELECT SUM(grn_amount) FROM grn
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomeModel.java:33} -- Query execution done
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomeModel.java:37} -- return purchaseAmount
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomePage.java:56} -- Set purchase amount
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomeModel.java:50} -- SQL query String: SELECT SUM(customer_invoice_amount) FROM customer_invoice;
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomeModel.java:55} -- Query execution done
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomeModel.java:59} -- return salesAmount
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomePage.java:60} -- Set sales amount
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {HomePage.java:64} -- Set transaction
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {LoginForm.java:204} -- Login to PAMUNUWILA HARDWARE (Pvt) Ltd Software Application
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {LoginForm.java:205} -- Login: Wed Sep 01 15:53:22 IST 2021 [DATE/Time]
+2021-09-01:15:53:22 DEBUG [AWT-EventQueue-0] {LoginForm.java:207} -- Dispose of LoginForm.java
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {GrnManager.java:42} -- Access to GrnManager.java
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {LoadSupplierDialog.java:34} -- Access to LoadSupplierDialog.java
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {SupplierModel.java:133} -- SQL query String: SELECT * FROM supplier INNER JOIN district INNER JOIN province ON supplier.district_no = district.district_no AND supplier.province_no = province.province_no WHERE (supplier_no LIKE ? OR supplier_name LIKE ? OR supplier_nic LIKE ? OR supplier_contact_no LIKE ? OR supplier_city LIKE ?) AND supplier_status = ? ORDER BY supplier_no
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {SupplierModel.java:144} -- Query execution done
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {SupplierModel.java:160} -- loadSupplierTable [addRow]
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {SupplierModel.java:160} -- loadSupplierTable [addRow]
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {LoadSupplierDialog.java:217} -- Load supplier table
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {LoadProductDialog.java:40} -- Access to LoadProductDialog.java
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {ProductModel.java:148} -- SQL query String: SELECT * FROM product INNER JOIN unit ON product.unit_no = unit.unit_no WHERE (product_no LIKE ? OR product_name LIKE ?) AND product_status = ? ORDER BY product_no
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {ProductModel.java:156} -- Query execution done
+2021-09-01:15:53:23 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {LoadProductDialog.java:215} -- Load product table
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:30} -- SQL query String: SELECT * FROM grn ORDER BY grn_no DESC LIMIT 1
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:35} -- Query execution done
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:39} -- return grnNo
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnManager.java:1458} -- Set Grn No
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:129} -- SQL query String: SELECT * FROM grn INNER JOIN supplier ON grn.supplier_no = supplier.supplier_no WHERE grn_no LIKE ? OR grn_date LIKE ? OR supplier_name LIKE ? ORDER BY grn_no
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:137} -- Query execution done
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:150} -- grnHistoryTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnModel.java:150} -- grnHistoryTable [addRow]
+2021-09-01:15:53:24 DEBUG [AWT-EventQueue-0] {GrnManager.java:1522} -- Load grn history table
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {GenerateGrnDialog.java:36} -- Access to GenerateGrnDialog.java
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {BaseReportFiller.java:163} -- Fill 1: created for pamunuwila_hardware_salesdepartment_grn
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {BaseReportFiller.java:191} -- created delayed actions 1 for filler 1
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {ExtensionsEnvironment.java:87} -- Instantiating extensions registry class net.sf.jasperreports.extensions.DefaultExtensionsRegistry
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:154} -- Loading registries for cache key sun.misc.Launcher$AppClassLoader@6d06d69c
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRLoader.java:791} -- Found resource jasperreports_extension.properties at jar:file:/C:/Users/EZIO%20AUDITORY/Documents/NetBeansProjects/Pamunuwila_Hardware_SalesDepartment/dist/lib/jasperreports-6.17.0.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@6d06d69c
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:186} -- Loading JasperReports extension properties resource jar:file:/C:/Users/EZIO%20AUDITORY/Documents/NetBeansProjects/Pamunuwila_Hardware_SalesDepartment/dist/lib/jasperreports-6.17.0.jar!/jasperreports_extension.properties
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory for property net.sf.jasperreports.extension.registry.factory.header.toolbar.parameter.contributor
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for header.toolbar.parameter.contributor using factory class net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions for property net.sf.jasperreports.extension.registry.factory.date.range.clause.functions
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for date.range.clause.functions using factory class net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.repository
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for repository using factory class net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.parts
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for parts using factory class net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.content.type.mapping
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for content.type.mapping using factory class net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.simple.font.families
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for simple.font.families using factory class net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.data.adapter.services
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for data.adapter.services using factory class net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory for property net.sf.jasperreports.extension.registry.factory.jive.web.resource.handlers
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for jive.web.resource.handlers using factory class net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.castor.mapping
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for castor.mapping using factory class net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.matcher.exporter.filter.mapping
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for matcher.exporter.filter.mapping using factory class net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.governor
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for governor using factory class net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions for property net.sf.jasperreports.extension.registry.factory.sql.clause.functions
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for sql.clause.functions using factory class net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.data.DataAdapterParameterContributorExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.parameter.contributor.data.adapter
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for parameter.contributor.data.adapter using factory class net.sf.jasperreports.data.DataAdapterParameterContributorExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory for property net.sf.jasperreports.extension.registry.factory.property.style.provider
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for property.style.provider using factory class net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.jackson.mapping
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for jackson.mapping using factory class net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.default
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for default using factory class net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.components
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for components using factory class net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:268} -- Instantiating registry of type net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory for property net.sf.jasperreports.extension.registry.factory.header.toolbar.style.provider
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {DefaultExtensionsRegistry.java:293} -- Instantiating extensions registry for header.toolbar.style.provider using factory class net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {FontExtensionsRegistry.java:88} -- Loading font extensions from net/sf/jasperreports/fonts/jasperreports-fonts.xml
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {SimpleFontExtensionHelper.java:293} -- Parsing font family JasperReports Icons
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {SimpleFontFace.java:172} -- Loading font net/sf/jasperreports/fonts/icons/icons.ttf
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {AwtFontManager.java:84} -- created font file C:\Users\EZIOAU~1\AppData\Local\Temp\jr-font4192711308399413018.ttf for net/sf/jasperreports/fonts/icons/icons.ttf
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {SimpleFontExtensionHelper.java:293} -- Parsing font family Pictonic
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {SimpleFontFace.java:172} -- Loading font net/sf/jasperreports/fonts/icons/icons.ttf
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {AwtFontManager.java:84} -- created font file C:\Users\EZIOAU~1\AppData\Local\Temp\jr-font7135913231699687572.ttf for net/sf/jasperreports/fonts/icons/icons.ttf
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: BACKGROUND} for band 2034535270
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: TITLE} for band 1313473634
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: PAGE_HEADER} for band 691897050
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: COLUMN_HEADER} for band 1534199639
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: DETAIL} for band 1116266278
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: COLUMN_FOOTER} for band 1418792619
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: PAGE_FOOTER} for band 637693713
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: LAST_PAGE_FOOTER} for band 1684173608
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillBand.java:175} -- Origin {reportName: null, groupName: null,bandType: SUMMARY} for band 778623926
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:104} -- Filler 1 - pageHeight: 842, columnFooterOffsetY: 782, lastPageColumnFooterOffsetY: 662
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRBaseFiller.java:565} -- Fill 1: filling report
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRBaseFiller.java:1055} -- max page width is 2097152000
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRFillDataset.java:1254} -- Fill 1: Creating SQL query executer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:154} -- DB is MySQL version 8.0.20 (8/0)
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:158} -- driver is MySQL Connector/J version mysql-connector-java-8.0.20 (Revision: afc0a13cd3c5a0bf57eaa809ee0ee6df1fd5ac9b) (8/0)
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:162} -- jdbc 4/2
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:164} -- connection URL is jdbc:mysql://localhost:3307/pamunuwila_hardware_salesdepartment_db?useSSL=false
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:206} -- system timezone is sun.util.calendar.ZoneInfo[id="Asia/Colombo",offset=19800000,dstSavings=0,useDaylight=false,transitions=9,lastRule=null]
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:207} -- report timezone is sun.util.calendar.ZoneInfo[id="Asia/Colombo",offset=19800000,dstSavings=0,useDaylight=false,transitions=9,lastRule=null]
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:208} -- JDBC timezone parameter is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:209} -- JDBC timezone property is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:215} -- JDBC parameters timezone parameter is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:227} -- JDBC parameters timezone property is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:234} -- parameters timezone null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:240} -- JDBC fields timezone parameter is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:252} -- JDBC fields timezone property is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:259} -- fields timezone null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:382} -- SQL query string: SELECT pamunuwila_hardware_salesdepartment_db.grn.grn_no,
+	pamunuwila_hardware_salesdepartment_db.grn.grn_date,
+	pamunuwila_hardware_salesdepartment_db.grn.supplier_no,
+	pamunuwila_hardware_salesdepartment_db.grn.grn_item_count,
+	pamunuwila_hardware_salesdepartment_db.grn.grn_discount,
+	pamunuwila_hardware_salesdepartment_db.grn.grn_vat,
+	pamunuwila_hardware_salesdepartment_db.grn.grn_amount,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_no,
+	pamunuwila_hardware_salesdepartment_db.grn_item.product_no,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_quantity,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_unit_buy_price,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_discount,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_vat,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_amount,
+	pamunuwila_hardware_salesdepartment_db.grn_item.grn_no,
+	pamunuwila_hardware_salesdepartment_db.supplier.supplier_no,
+	pamunuwila_hardware_salesdepartment_db.supplier.supplier_name,
+	pamunuwila_hardware_salesdepartment_db.product.product_no,
+	pamunuwila_hardware_salesdepartment_db.product.product_name,
+	pamunuwila_hardware_salesdepartment_db.unit.unit_no,
+	pamunuwila_hardware_salesdepartment_db.unit.unit_name,
+	pamunuwila_hardware_salesdepartment_db.product.unit_no
+FROM pamunuwila_hardware_salesdepartment_db.grn
+	INNER JOIN pamunuwila_hardware_salesdepartment_db.grn_item ON 
+	 pamunuwila_hardware_salesdepartment_db.grn.grn_no = pamunuwila_hardware_salesdepartment_db.grn_item.grn_no
+	INNER JOIN pamunuwila_hardware_salesdepartment_db.supplier ON 
+	 pamunuwila_hardware_salesdepartment_db.grn.supplier_no = pamunuwila_hardware_salesdepartment_db.supplier.supplier_no 
+	INNER JOIN pamunuwila_hardware_salesdepartment_db.product ON 
+	 pamunuwila_hardware_salesdepartment_db.grn_item.product_no = pamunuwila_hardware_salesdepartment_db.product.product_no 
+	INNER JOIN pamunuwila_hardware_salesdepartment_db.unit ON 
+	 pamunuwila_hardware_salesdepartment_db.product.unit_no = pamunuwila_hardware_salesdepartment_db.unit.unit_no 
+	 WHERE  pamunuwila_hardware_salesdepartment_db.grn.grn_no = ?
+	 ORDER BY pamunuwila_hardware_salesdepartment_db.grn_item.grn_item_no
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:596} -- Parameter #1 (grn_no of type java.lang.Integer): 2
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:307} -- Executing query
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRJdbcQueryExecuter.java:322} -- Query execution done
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_no has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_date has type 91/DATE, class java.sql.Date
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:800} -- calendar for field grn_date is null
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:409} -- date field grn_date is 2021-09-01 (1630434600000)
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field supplier_no has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_count has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_discount has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_vat has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_amount has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_no has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field product_no has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_quantity has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_unit_buy_price has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_discount has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_vat has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field grn_item_amount has type 8/DOUBLE, class java.lang.Double
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field COLUMN_15 has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field COLUMN_16 has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field supplier_name has type 12/VARCHAR, class java.lang.String
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field COLUMN_18 has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field product_name has type 12/VARCHAR, class java.lang.String
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field unit_no has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field unit_name has type 12/VARCHAR, class java.lang.String
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRResultSetDataSource.java:518} -- field COLUMN_22 has type 4/INT, class java.lang.Integer
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRBaseFiller.java:1363} -- Fill 1: adding page 1
+2021-09-01:15:53:27 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:320} -- Fill 1: title at 20
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {SimpleTextLineWrapper.java:318} -- creating element font infos cache of size 2000
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateLine@63cddaa5
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@49b5d974
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@1a36d26b
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 1313473634}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:405} -- Fill 1: page header at 132
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:673} -- 873ff12d-1949-404c-9b6a-8d7125038f95: pattern timezone property net.sf.jasperreports.sql.date.pattern.timezone is null, resolved to null
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:673} -- 873ff12d-1949-404c-9b6a-8d7125038f95: pattern timezone property net.sf.jasperreports.pattern.timezone is null, resolved to null
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:591} -- 873ff12d-1949-404c-9b6a-8d7125038f95: formatted value 2021-09-01 (java.sql.Date/1630434600000) to September 1, 2021
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@128fba68
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@128fba68 for (null, null)
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateLine@6336ca52
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@1f71e95a
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@1f71e95a for (null, {java.lang.Integer, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@1f71e95a for object net.sf.jasperreports.engine.fill.JRTemplateText@47fb447
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@1f71e95a for (null, {java.lang.Integer, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@128fba68 for object net.sf.jasperreports.engine.fill.JRTemplateText@6bcc025a
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@3efd312b
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@3efd312b for (null, {java.sql.Date, MMMM d, yyyy,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@128fba68 for object net.sf.jasperreports.engine.fill.JRTemplateText@57726086
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@128fba68 for object net.sf.jasperreports.engine.fill.JRTemplateText@5ca766e0
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@128fba68 for object net.sf.jasperreports.engine.fill.JRTemplateText@b047036
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 691897050}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:491} -- Fill 1: column header at 250
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@47cae3c2
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@1f81f57a
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@8330746
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@8330746 for object net.sf.jasperreports.engine.fill.JRTemplateText@18f73171
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@47cae3c2 for object net.sf.jasperreports.engine.fill.JRTemplateText@75c3288a
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@47cae3c2 for object net.sf.jasperreports.engine.fill.JRTemplateText@6579396d
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@1f81f57a for object net.sf.jasperreports.engine.fill.JRTemplateText@75600bb3
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@47cae3c2 for object net.sf.jasperreports.engine.fill.JRTemplateText@543dc0d7
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 1534199639}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:770} -- Fill 1: detail at 282
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@626e244a
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@30281e07
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@30281e07 for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for object net.sf.jasperreports.engine.fill.JRTemplateText@7d2c9e88
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for object net.sf.jasperreports.engine.fill.JRTemplateText@53201bfb
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@40ff39a1
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@40ff39a1 for (null, null)
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@3057cf9f
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@3057cf9f for (null, {java.lang.Integer, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for object net.sf.jasperreports.engine.fill.JRTemplateText@2996cfc3
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@626e244a for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@7abaf6c9
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@7abaf6c9 for (null, null)
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 1116266278}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:1203} -- Fill 1: summary at 312
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@59d50445
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateLine@147f1604
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@63523a9d
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:1107} -- Fill 1: column footer at 420
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateLine@28cc4d27
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 1418792619}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRVerticalFiller.java:1176} -- Fill 1: last page footer at 682
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@782205a3
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@782205a3 for (null, {java.lang.Integer, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@36ac64d9
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@686ec9ec
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateLine@22782374
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@4a1f2585
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@4a1f2585 for object net.sf.jasperreports.engine.fill.JRTemplateText@1f401ab3
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@4a1f2585 for object net.sf.jasperreports.engine.fill.JRTemplateText@17f911e
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@627f71c6
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@627f71c6 for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@4a1f2585 for object net.sf.jasperreports.engine.fill.JRTemplateText@517f4301
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@4ef55e1f
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@627f71c6 for object net.sf.jasperreports.engine.fill.JRTemplateText@33ffc1be
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@627f71c6 for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:91} -- Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@627f71c6 for object net.sf.jasperreports.engine.fill.JRTemplateText@2a976746
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@627f71c6 for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DeduplicableRegistry.java:84} -- Added object net.sf.jasperreports.engine.fill.JRTemplateText@15b4e5e
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillTextField.java:498} -- created net.sf.jasperreports.engine.fill.JRTemplateText@15b4e5e for (null, {java.lang.Double, null,null,null,null})
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 1684173608}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: BAND, group: null, band: 778623926}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: COLUMN, group: null, band: 0}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: PAGE, group: null, band: 0}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: REPORT, group: null, band: 0}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {DelayedFillActions.java:229} -- 1 running delayed actions on {type: MASTER, group: null, band: 0}
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRBaseFiller.java:640} -- Fill 1: ended
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {JRFillDataset.java:1337} -- Fill 1: closing query executer
+2021-09-01:15:53:28 DEBUG [AWT-EventQueue-0] {GenerateGrnDialog.java:45} -- View report
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {GrnManager.java:42} -- Access to GrnManager.java
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {LoadSupplierDialog.java:34} -- Access to LoadSupplierDialog.java
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {SupplierModel.java:133} -- SQL query String: SELECT * FROM supplier INNER JOIN district INNER JOIN province ON supplier.district_no = district.district_no AND supplier.province_no = province.province_no WHERE (supplier_no LIKE ? OR supplier_name LIKE ? OR supplier_nic LIKE ? OR supplier_contact_no LIKE ? OR supplier_city LIKE ?) AND supplier_status = ? ORDER BY supplier_no
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {SupplierModel.java:144} -- Query execution done
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {SupplierModel.java:160} -- loadSupplierTable [addRow]
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {SupplierModel.java:160} -- loadSupplierTable [addRow]
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {LoadSupplierDialog.java:217} -- Load supplier table
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {LoadProductDialog.java:40} -- Access to LoadProductDialog.java
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {ProductModel.java:148} -- SQL query String: SELECT * FROM product INNER JOIN unit ON product.unit_no = unit.unit_no WHERE (product_no LIKE ? OR product_name LIKE ?) AND product_status = ? ORDER BY product_no
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {ProductModel.java:156} -- Query execution done
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:52 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {ProductModel.java:174} -- loadProductTable [addRow]
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {LoadProductDialog.java:215} -- Load product table
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:30} -- SQL query String: SELECT * FROM grn ORDER BY grn_no DESC LIMIT 1
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:35} -- Query execution done
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:39} -- return grnNo
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnManager.java:1458} -- Set Grn No
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:129} -- SQL query String: SELECT * FROM grn INNER JOIN supplier ON grn.supplier_no = supplier.supplier_no WHERE grn_no LIKE ? OR grn_date LIKE ? OR supplier_name LIKE ? ORDER BY grn_no
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:137} -- Query execution done
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:150} -- grnHistoryTable [addRow]
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnModel.java:150} -- grnHistoryTable [addRow]
+2021-09-01:15:53:53 DEBUG [AWT-EventQueue-0] {GrnManager.java:1522} -- Load grn history table
+2021-09-01:15:53:55 DEBUG [AWT-EventQueue-0] {GenerateGrnDialog.java:36} -- Access to GenerateGrnDialog.java
+2021-09-01:15:53:55 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:53:55 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:53:56 ERROR [AWT-EventQueue-0] {GenerateGrnDialog.java:48} -- Exception: java.io.FileNotFoundException: reports\pamunuwila_hardware_salesdepartment_grn.jasper
+2021-09-01:15:54:00 DEBUG [AWT-EventQueue-0] {HomePage.java:82} -- Exit of PAMUNUWILA HARDWARE (Pvt) Ltd software application [END]
+2021-09-01:15:54:00 DEBUG [AWT-EventQueue-0] {HomePage.java:83} -- Logout: Wed Sep 01 15:54:00 IST 2021 [DATE/Time]
+2021-09-01:15:54:58 DEBUG [main] {SplashScreen.java:26} -- Access to SplashScreen.java
+2021-09-01:15:55:02 DEBUG [main] {LoginForm.java:266} -- Dispose of SplashScreen.java
+2021-09-01:15:55:03 DEBUG [AWT-EventQueue-0] {LoginForm.java:36} -- Access to LoginForm.java
+2021-09-01:15:55:03 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:15:55:03 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:15:55:03 DEBUG [AWT-EventQueue-0] {LoginForm.java:272} -- Run of PAMUNUWILA HARDWARE (Pvt) Ltd software application
+2021-09-01:15:55:05 DEBUG [AWT-EventQueue-0] {LoginForm.java:53} -- Exit of PAMUNUWILA HARDWARE (Pvt) Ltd software application [END]
+2021-09-01:15:55:05 DEBUG [AWT-EventQueue-0] {LoginForm.java:54} -- Logout: Wed Sep 01 15:55:05 IST 2021 [DATE/Time]
+2021-09-01:16:02:05 DEBUG [main] {SplashScreen.java:26} -- Access to SplashScreen.java
+2021-09-01:16:02:10 DEBUG [main] {LoginForm.java:266} -- Dispose of SplashScreen.java
+2021-09-01:16:02:10 DEBUG [AWT-EventQueue-0] {LoginForm.java:36} -- Access to LoginForm.java
+2021-09-01:16:02:10 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-01:16:02:10 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-01:16:02:10 DEBUG [AWT-EventQueue-0] {LoginForm.java:272} -- Run of PAMUNUWILA HARDWARE (Pvt) Ltd software application
+2021-09-01:16:02:14 DEBUG [AWT-EventQueue-0] {LoginForm.java:53} -- Exit of PAMUNUWILA HARDWARE (Pvt) Ltd software application [END]
+2021-09-01:16:02:14 DEBUG [AWT-EventQueue-0] {LoginForm.java:54} -- Logout: Wed Sep 01 16:02:14 IST 2021 [DATE/Time]
+2021-09-06:11:33:34 DEBUG [main] {SplashScreen.java:26} -- Access to SplashScreen.java
+2021-09-06:11:33:38 DEBUG [main] {LoginForm.java:266} -- Dispose of SplashScreen.java
+2021-09-06:11:33:39 DEBUG [AWT-EventQueue-0] {LoginForm.java:36} -- Access to LoginForm.java
+2021-09-06:11:33:40 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-06:11:33:40 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-06:11:33:40 DEBUG [AWT-EventQueue-0] {LoginForm.java:272} -- Run of PAMUNUWILA HARDWARE (Pvt) Ltd software application
+2021-09-06:11:33:43 ERROR [AWT-EventQueue-0] {LoginForm.java:188} -- Error: Password not enterd
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:28} -- SQL query String: SELECT * FROM user INNER JOIN jobrole ON user.jobrole_no = jobrole.jobrole_no WHERE user_username = ? AND user_status = ?
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:35} -- Query execution done
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:52} -- Check validation of username & password
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:58} -- Set login status
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:61} -- return rowData
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomePage.java:36} -- Access to HomePage.java
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomePage.java:45} -- Give user access
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomeModel.java:28} -- SQL query String: SELECT SUM(grn_amount) FROM grn
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomeModel.java:33} -- Query execution done
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomeModel.java:37} -- return purchaseAmount
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomePage.java:56} -- Set purchase amount
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomeModel.java:50} -- SQL query String: SELECT SUM(customer_invoice_amount) FROM customer_invoice;
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomeModel.java:55} -- Query execution done
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomeModel.java:59} -- return salesAmount
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomePage.java:60} -- Set sales amount
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {HomePage.java:64} -- Set transaction
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginForm.java:204} -- Login to PAMUNUWILA HARDWARE (Pvt) Ltd Software Application
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginForm.java:205} -- Login: Mon Sep 06 11:33:46 IST 2021 [DATE/Time]
+2021-09-06:11:33:46 DEBUG [AWT-EventQueue-0] {LoginForm.java:207} -- Dispose of LoginForm.java
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesManager.java:42} -- Access to InvoiceManager.java
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {LoadCustomerDialog.java:34} -- Access to LoadCustomerDialog.java
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {CustomerModel.java:133} -- SQL query String: SELECT * FROM customer INNER JOIN district INNER JOIN province ON customer.district_no = district.district_no AND customer.province_no = province.province_no WHERE (customer_no LIKE ? OR customer_name LIKE ? OR customer_nic LIKE ? OR customer_contact_no LIKE ? OR customer_city LIKE ?) AND customer_status = ? ORDER BY customer_no
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {CustomerModel.java:144} -- Query execution done
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {CustomerModel.java:160} -- loadCustomerTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {LoadCustomerDialog.java:217} -- Load customer table
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {LoadStockDialog.java:45} -- Access to LoadStockDialog.java
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {DBConnection.java:27} -- Get database connection
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:35} -- SQL query String: SELECT * FROM stock INNER JOIN product INNER JOIN unit ON stock.product_no = product.product_no AND product.unit_no = unit.unit_no WHERE (stock_no LIKE ? OR stock.product_no LIKE ? OR product_name LIKE ?) AND stock_status = ? ORDER BY stock_no
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:44} -- Query execution done
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:65} -- loadStockTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:65} -- loadStockTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:65} -- loadStockTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:65} -- loadStockTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {StockModel.java:65} -- loadStockTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {LoadStockDialog.java:226} -- Load stock table
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:30} -- SQL query String: SELECT * FROM customer_invoice ORDER BY customer_invoice_no DESC LIMIT 1
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:35} -- Query execution done
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:39} -- return invoiceNo
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesManager.java:1437} -- Set Invoice No
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:167} -- SQL query String: SELECT * FROM customer_invoice INNER JOIN customer ON customer_invoice.customer_no = customer.customer_no WHERE customer_invoice_no LIKE ? OR customer_invoice_date LIKE ? OR customer_name LIKE ? ORDER BY customer_invoice_no
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:175} -- Query execution done
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:188} -- loadInvoiceHistoryTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesModel.java:188} -- loadInvoiceHistoryTable [addRow]
+2021-09-06:11:33:49 DEBUG [AWT-EventQueue-0] {SalesManager.java:1501} -- Load invoice history table
+2021-09-06:11:33:55 DEBUG [AWT-EventQueue-0] {HomePage.java:82} -- Exit of PAMUNUWILA HARDWARE (Pvt) Ltd software application [END]
+2021-09-06:11:33:55 DEBUG [AWT-EventQueue-0] {HomePage.java:83} -- Logout: Mon Sep 06 11:33:55 IST 2021 [DATE/Time]
+2022-08-17:13:17:19 DEBUG [main] {SplashScreen.java:26} -- Access to SplashScreen.java
+2022-08-17:13:17:24 DEBUG [main] {LoginForm.java:266} -- Dispose of SplashScreen.java
+2022-08-17:13:17:24 DEBUG [AWT-EventQueue-0] {LoginForm.java:36} -- Access to LoginForm.java
+2022-08-17:13:17:25 ERROR [AWT-EventQueue-0] {DBConnection.java:30} -- Exception: Public Key Retrieval is not allowed
+2022-08-17:13:17:25 DEBUG [AWT-EventQueue-0] {DBConnection.java:32} -- return dbConnection
+2022-08-17:13:17:25 DEBUG [AWT-EventQueue-0] {LoginForm.java:272} -- Run of PAMUNUWILA HARDWARE (Pvt) Ltd software application
+2022-08-17:13:17:31 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:28} -- SQL query String: SELECT * FROM user INNER JOIN jobrole ON user.jobrole_no = jobrole.jobrole_no WHERE user_username = ? AND user_status = ?
+2022-08-17:13:17:31 ERROR [AWT-EventQueue-0] {LoginFormModel.java:65} -- Exception: null
+2022-08-17:13:17:31 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:67} -- return null
+2022-08-17:13:17:32 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:28} -- SQL query String: SELECT * FROM user INNER JOIN jobrole ON user.jobrole_no = jobrole.jobrole_no WHERE user_username = ? AND user_status = ?
+2022-08-17:13:17:32 ERROR [AWT-EventQueue-0] {LoginFormModel.java:65} -- Exception: null
+2022-08-17:13:17:32 DEBUG [AWT-EventQueue-0] {LoginFormModel.java:67} -- return null
+2022-08-17:13:18:09 DEBUG [AWT-EventQueue-0] {LoginForm.java:53} -- Exit of PAMUNUWILA HARDWARE (Pvt) Ltd software application [END]
+2022-08-17:13:18:09 DEBUG [AWT-EventQueue-0] {LoginForm.java:54} -- Logout: Wed Aug 17 13:18:09 IST 2022 [DATE/Time]
