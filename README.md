@@ -1,2 +1,2 @@
 # Pamunuwila-Hardware-SalesDepartment
-The Final Project of the first-year Software Application Development module.
+The Final Project of the first year Software Application Development module.
